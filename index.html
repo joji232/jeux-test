@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Calcul Mental CE2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏆 Jeu de Calcul Mental CE2 🏆</h1>
+            <div class="stats">
+                <div class="stat-item">Points: <span id="points">0</span></div>
+                <div class="stat-item">Niveau: <span id="niveau">1</span></div>
+                <div class="stat-item">Temps: <span id="temps">60</span>s</div>
+            </div>
+        </header>
+
+        <main>
+            <div class="game-area">
+                <div class="question" id="question">
+                    <!-- La question s'affichera ici -->
+                </div>
+                
+                <div class="answer-input">
+                    <input type="number" id="reponse" placeholder="Votre réponse" autofocus>
+                    <button id="valider">Valider</button>
+                </div>
+
+                <div class="feedback" id="feedback">
+                    <!-- Les messages de feedback s'afficheront ici -->
+                </div>
+
+                <div class="progress-bar">
+                    <div id="barre-progression"></div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="nouvelle-partie">Nouvelle partie</button>
+                <button id="changer-niveau">Changer de niveau</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Jeu de calcul mental pour les élèves de CE2 | Utilisez les pages GitHub pour jouer !</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
